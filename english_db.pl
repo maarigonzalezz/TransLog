@@ -247,3 +247,127 @@ palabra(eng, heels, nombre, [genero(neutro), numero(plural)]).
 palabra(eng, language, nombre, [genero(neutro), numero(singular)]).
 palabra(eng, artificial, nombre, [genero(neutro), numero(singular)]).
 palabra(eng, tree, nombre, [genero(neutro), numero(singular)]).
+
+% ===================== declaracion de adjetivos ===============
+
+% --- DESCRIPTIVE / POSITIVE ---
+palabra(eng, beautiful, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, pretty, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, lovely, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, cute, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, handsome, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, nice, adjetivo, [genero(neutro), numero(invariable)]).
+
+% --- SIZE / HEIGHT ---
+palabra(eng, small, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, little, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, big, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, large, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, tall, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, short, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, giant, adjetivo, [genero(neutro), numero(invariable)]).
+
+% --- COLORS ---
+palabra(eng, red, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, orange, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, yellow, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, green, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, blue, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, purple, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, pink, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, turquoise, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, brown, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, black, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, gray, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, white, adjetivo, [genero(neutro), numero(invariable)]).
+
+% --- FEELINGS / STATES ---
+palabra(eng, rich, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, poor, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, tired, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, bored, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, happy, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, sad, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, angry, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, stressed, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, ugly, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, new, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, old, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, natural, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, amazing, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, awesome, adjetivo, [genero(neutro), numero(invariable)]).
+
+% --- ADDITIONAL COMMON ADJECTIVES ---
+palabra(eng, kind, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, difficult, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, easy, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, interesting, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, important, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, busy, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, free, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, fast, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, slow, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, dirty, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, clean, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, good, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, bad, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, thin, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, fat, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, hot, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, cold, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, soft, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, hard, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, strong, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, weak, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, generous, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, cruel, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, expensive, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, cheap, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, useful, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, useless, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, round, adjetivo, [genero(neutro), numero(invariable)]).
+palabra(eng, square, adjetivo, [genero(neutro), numero(invariable)]).
+
+% ===================== declaracion de interjecciones ================
+palabra(eng, hello, interjeccion, [invariable(si)]).
+palabra(eng, goodbye, interjeccion, [invariable(si)]).
+palabra(eng, thanks, interjeccion, [invariable(si)]).
+palabra(eng, please, interjeccion, [invariable(si)]).
+palabra(eng, yes, interjeccion, [invariable(si)]).
+palabra(eng, no, interjeccion, [invariable(si)]).
+palabra(eng, welcome, interjeccion, [invariable(si)]).
+palabra(eng, good_morning, interjeccion, [invariable(si)]).
+palabra(eng, good_afternoon, interjeccion, [invariable(si)]).
+palabra(eng, good_evening, interjeccion, [invariable(si)]).
+palabra(eng, sorry, interjeccion, [invariable(si)]).
+palabra(eng, excuse_me, interjeccion, [invariable(si)]).
+palabra(eng, bless_you, interjeccion, [invariable(si)]).
+palabra(eng, congratulations, interjeccion, [invariable(si)]).
+palabra(eng, bravo, interjeccion, [invariable(si)]).
+palabra(eng, ouch, interjeccion, [invariable(si)]).
+palabra(eng, hey, interjeccion, [invariable(si)]).
+palabra(eng, wow, interjeccion, [invariable(si)]).
+palabra(eng, listen, interjeccion, [invariable(si)]).
+palabra(eng, of_course, interjeccion, [invariable(si)]).
+palabra(eng, okay, interjeccion, [invariable(si)]).
+palabra(eng, sure, interjeccion, [invariable(si)]).
+
+% ================== declaracion de posesivos ==================
+palabra(eng, my, posesivo, [persona(1), numero(singular)]).
+palabra(eng, your, posesivo, [persona(2), numero(variable)]).
+palabra(eng, his, posesivo, [persona(3), numero(singular), genero(masculino)]).
+palabra(eng, her, posesivo, [persona(3), numero(singular), genero(femenino)]).
+palabra(eng, its, posesivo, [persona(3), numero(singular), genero(neutro)]).
+palabra(eng, our, posesivo, [persona(1), numero(plural)]).
+palabra(eng, their, posesivo, [persona(3), numero(plural)]).
+
+% ================== declaracion de interrogativos ===============
+palabra(eng, what, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, who, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, where, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, when, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, how, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, why, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, which, pregunta, [tipo(interrogativo), invariable(si)]).
+
+

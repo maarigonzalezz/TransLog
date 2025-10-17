@@ -278,5 +278,144 @@ palabra(esp, lenguaje, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, artificial, nombre, [genero(comun), numero(singular)]).
 palabra(esp, arbol, nombre, [genero(masculino), numero(singular)]).
 
+% ========================= declaracion de adejtivos =================
+% --- DESCRIPTIVOS POSITIVOS ---
+palabra(esp, bonita, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, bonito, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, lindas, adjetivo, [genero(femenino), numero(plural)]).
+palabra(esp, lindos, adjetivo, [genero(masculino), numero(plural)]).
+palabra(esp, lindo, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, linda, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, hermoso, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, hermosa, adjetivo, [genero(femenino), numero(singular)]).
+
+% --- TAMAÑO ---
+palabra(esp, pequeno, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, pequena, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, grandes, adjetivo, [genero(invariable), numero(plural)]).
+palabra(esp, grande, adjetivo, [genero(invariable), numero(singular)]).
+palabra(esp, gigante, adjetivo, [genero(invariable), numero(singular)]).
+
+palabra(esp, alto, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, alta, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, bajo, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, baja, adjetivo, [genero(femenino), numero(singular)]).
+
+% --- COLORES ---
+palabra(esp, rojo, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, roja, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, naranja, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, amarillo, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, amarilla, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, verde, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, azul, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, morado, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, morada, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, rosado, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, rosada, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, turquesa, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, cafe, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, negro, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, negra, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, gris, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, blanco, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, blanca, adjetivo, [genero(femenino), numero(singular)]).
+
+% --- ESTADO / EMOCIÓN ---
+palabra(esp, rico, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, rica, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, pobre, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, cansado, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, cansada, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, aburrido, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, aburrida, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, feliz, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, tristes, adjetivo, [genero(invariable), numero(plural)]).
+palabra(esp, triste, adjetivo, [genero(invariable), numero(singular)]).
+palabra(esp, enojado, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, enojada, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, estresado, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, estresada, adjetivo, [genero(femenino), numero(singular)]).
+
+% --- OTROS ---
+palabra(esp, feo, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, fea, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, nuevo, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, nueva, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, viejo, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, vieja, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, natural, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, asombroso, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, asombrosa, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, amable, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, dificil, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, facil, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, interesante, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, importante, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, ocupado, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, ocupada, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, libre, adjetivo, [genero(invariable), numero(invariable)]).
+palabra(esp, rapido, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, rapida, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, lento, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, lenta, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, sucio, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, sucia, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, limpio, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, limpia, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, bueno, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, buena, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, malo, adjetivo, [genero(masculino), numero(singular)]).
+palabra(esp, mala, adjetivo, [genero(femenino), numero(singular)]).
+
+
+% ===================== declaracion de interjecciones ================
+palabra(esp, hola, interjeccion, [invariable(si)]).
+palabra(esp, adios, interjeccion, [invariable(si)]).
+palabra(esp, gracias, interjeccion, [invariable(si)]).
+palabra(esp, por_favor, interjeccion, [invariable(si)]).
+palabra(esp, si, interjeccion, [invariable(si)]).
+palabra(esp, no, interjeccion, [invariable(si)]).
+palabra(esp, bienvenido, interjeccion, [invariable(si)]).
+palabra(esp, bienvenidos, interjeccion, [invariable(si)]).
+palabra(esp, buenos_dias, interjeccion, [invariable(si)]).
+palabra(esp, buenas_tardes, interjeccion, [invariable(si)]).
+palabra(esp, buenas_noches, interjeccion, [invariable(si)]).
+palabra(esp, perdon, interjeccion, [invariable(si)]).
+palabra(esp, disculpa, interjeccion, [invariable(si)]).
+palabra(esp, salud, interjeccion, [invariable(si)]).
+palabra(esp, felicidades, interjeccion, [invariable(si)]).
+palabra(esp, bravo, interjeccion, [invariable(si)]).
+palabra(esp, ay, interjeccion, [invariable(si)]).
+palabra(esp, eh, interjeccion, [invariable(si)]).
+palabra(esp, wow, interjeccion, [invariable(si)]).
+palabra(esp, oigan, interjeccion, [invariable(si)]).
+palabra(esp, oye, interjeccion, [invariable(si)]).
+palabra(esp, claro, interjeccion, [invariable(si)]).
+palabra(esp, vale, interjeccion, [invariable(si)]).
+
+% ================= declaracion de posesivos =================
+palabra(esp, mi, posesivo, [persona(1), numero(singular)]).
+palabra(esp, mis, posesivo, [persona(1), numero(plural)]).
+palabra(esp, tu, posesivo, [persona(2), numero(singular)]).
+palabra(esp, tus, posesivo, [persona(2), numero(plural)]).
+palabra(esp, su, posesivo, [persona(3), numero(singular)]).
+palabra(esp, sus, posesivo, [persona(3), numero(plural)]).
+palabra(esp, nuestro, posesivo, [persona(1), numero(plural), genero(masculino)]).
+palabra(esp, nuestra, posesivo, [persona(1), numero(plural), genero(femenino)]).
+palabra(esp, nuestros, posesivo, [persona(1), numero(plural), genero(masculino)]).
+palabra(esp, nuestras, posesivo, [persona(1), numero(plural), genero(femenino)]).
+
+%================ declaracion de interrogantes ===============
+palabra(esp, que, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(esp, quien, pregunta, [tipo(interrogativo), numero(singular)]).
+palabra(esp, quienes, pregunta, [tipo(interrogativo), numero(plural)]).
+palabra(esp, donde, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(esp, cuando, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(esp, como, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(esp, por_que, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(esp, cual, pregunta, [tipo(interrogativo), numero(singular)]).
+palabra(esp, cuales, pregunta, [tipo(interrogativo), numero(plural)]).
+
 
 
