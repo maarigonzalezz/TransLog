@@ -1,0 +1,13 @@
+% base de datos en ingles
+
+
+% pronombres
+
+palabra(eng, i, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).
+palabra(eng, you, pronombre, [persona(2), numero(singular), genero(neutro), caso(sujeto)]).
+palabra(eng, it, pronombre, [persona(3), numero(singular), genero(neutro), caso(sujeto)]).
+palabra(eng, he, pronombre, [persona(3), numero(singular), genero(masculino), caso(sujeto)]).
+palabra(eng, she, pronombre, [persona(3), numero(singular), genero(femenino), caso(sujeto)]).
+palabra(eng, we, pronombre, [persona(1), numero(plural), genero(neutro), caso(sujeto)]).
+palabra(eng, they, pronombre, [persona(3), numero(plural), genero(neutro), caso(sujeto)]).
+palabra(eng, you, pronombre, [persona(2), numero(plural), genero(neutro), caso(sujeto)]).

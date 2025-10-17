@@ -1,0 +1,20 @@
+% base de datos en espanol
+
+
+
+% declarar hechos de pronombres
+palabra(esp, yo, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).
+palabra(esp, tú, pronombre, [persona(2), numero(singular), genero(neutro), caso(sujeto)]).
+palabra(esp, usted, pronombre, [persona(2), numero(singular), genero(neutro), caso(sujeto)]).
+palabra(esp, él, pronombre, [persona(3), numero(singular), genero(masculino), caso(sujeto)]).
+palabra(esp, ella, pronombre, [persona(3), numero(singular), genero(femenino), caso(sujeto)]).
+palabra(esp, nosotros, pronombre, [persona(1), numero(plural), genero(neutro), caso(sujeto)]).
+palabra(esp, nosotras, pronombre, [persona(1), numero(plural), genero(femenino), caso(sujeto)]).
+palabra(esp, ustedes, pronombre, [persona(3), numero(plural), genero(neutro), caso(sujeto)]).
+palabra(esp, ellos, pronombre, [persona(3), numero(plural), genero(neutro), caso(sujeto)]).
+palabra(esp, ellas, pronombre, [persona(3), numero(plural), genero(femenino), caso(sujeto)]).
+
+
+
+
+
