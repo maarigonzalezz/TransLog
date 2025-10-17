@@ -1,8 +1,7 @@
 % base de datos en ingles
 
 
-% pronombres
-
+% declarar hechos de pronombres
 palabra(eng, i, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).
 palabra(eng, you, pronombre, [persona(2), numero(singular), genero(neutro), caso(sujeto)]).
 palabra(eng, it, pronombre, [persona(3), numero(singular), genero(neutro), caso(sujeto)]).
@@ -11,3 +10,131 @@ palabra(eng, she, pronombre, [persona(3), numero(singular), genero(femenino), ca
 palabra(eng, we, pronombre, [persona(1), numero(plural), genero(neutro), caso(sujeto)]).
 palabra(eng, they, pronombre, [persona(3), numero(plural), genero(neutro), caso(sujeto)]).
 palabra(eng, you, pronombre, [persona(2), numero(plural), genero(neutro), caso(sujeto)]).
+
+% declarar hechos de determinantes
+palabra(eng, the, determinante, [tipo(definido), numero(variable), genero(neutro)]).
+palabra(eng, a, determinante, [tipo(indefinido), numero(singular), genero(neutro)]).
+palabra(eng, an, determinante, [tipo(indefinido), numero(singular), genero(neutro)]).
+palabra(eng, some, determinante, [tipo(indefinido), numero(plural), genero(neutro)]).
+
+% declarar hechos de proposiciones
+palabra(eng, to, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, of, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, in, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, with, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, for, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, on, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, between, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, without, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, from, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, until, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, under, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, in_front_of, preposicion, [tipo(compuesta), invariable(si)]).
+
+%declarar hechos de verbos
+% ---- TO BE ----
+palabra(eng, be, verbo, [forma(infinitivo)]).
+palabra(eng, am, verbo, [persona(1), numero(singular)]).
+palabra(eng, are, verbo, [persona(2), numero(singular)]).
+palabra(eng, is, verbo, [persona(3), numero(singular)]).
+palabra(eng, are, verbo, [persona(1), numero(plural)]).
+palabra(eng, are, verbo, [persona(2), numero(plural)]).
+palabra(eng, are, verbo, [persona(3), numero(plural)]).
+
+% ---- TO HAVE ----
+palabra(eng, have, verbo, [forma(infinitivo)]).
+palabra(eng, have, verbo, [persona(1), numero(singular)]).
+palabra(eng, have, verbo, [persona(2), numero(singular)]).
+palabra(eng, has, verbo, [persona(3), numero(singular)]).
+palabra(eng, have, verbo, [persona(_), numero(plural)]).
+
+% ---- TO SPEAK ----
+palabra(eng, speak, verbo, [forma(infinitivo)]).
+palabra(eng, speak, verbo, [persona(1), numero(singular)]).
+palabra(eng, speak, verbo, [persona(2), numero(singular)]).
+palabra(eng, speaks, verbo, [persona(3), numero(singular)]).
+palabra(eng, speak, verbo, [persona(_), numero(plural)]).
+
+% ---- TO SLEEP ----
+palabra(eng, sleep, verbo, [forma(infinitivo)]).
+palabra(eng, sleep, verbo, [persona(1), numero(singular)]).
+palabra(eng, sleep, verbo, [persona(2), numero(singular)]).
+palabra(eng, sleeps, verbo, [persona(3), numero(singular)]).
+palabra(eng, sleep, verbo, [persona(_), numero(plural)]).
+
+% ---- TO STUDY ----
+palabra(eng, study, verbo, [forma(infinitivo)]).
+palabra(eng, study, verbo, [persona(1), numero(singular)]).
+palabra(eng, study, verbo, [persona(2), numero(singular)]).
+palabra(eng, studies, verbo, [persona(3), numero(singular)]).
+palabra(eng, study, verbo, [persona(_), numero(plural)]).
+
+% ---- TO COOK ----
+palabra(eng, cook, verbo, [forma(infinitivo)]).
+palabra(eng, cook, verbo, [persona(1), numero(singular)]).
+palabra(eng, cook, verbo, [persona(2), numero(singular)]).
+palabra(eng, cooks, verbo, [persona(3), numero(singular)]).
+palabra(eng, cook, verbo, [persona(_), numero(plural)]).
+
+% ---- TO WORK ----
+palabra(eng, work, verbo, [forma(infinitivo)]).
+palabra(eng, work, verbo, [persona(1), numero(singular)]).
+palabra(eng, work, verbo, [persona(2), numero(singular)]).
+palabra(eng, works, verbo, [persona(3), numero(singular)]).
+palabra(eng, work, verbo, [persona(_), numero(plural)]).
+
+% ---- TO DO ----
+palabra(eng, do, verbo, [forma(infinitivo)]).
+palabra(eng, do, verbo, [persona(1), numero(singular)]).
+palabra(eng, do, verbo, [persona(2), numero(singular)]).
+palabra(eng, does, verbo, [persona(3), numero(singular)]).
+palabra(eng, do, verbo, [persona(_), numero(plural)]).
+
+% ---- TO GO ----
+palabra(eng, go, verbo, [forma(infinitivo)]).
+palabra(eng, go, verbo, [persona(1), numero(singular)]).
+palabra(eng, go, verbo, [persona(2), numero(singular)]).
+palabra(eng, goes, verbo, [persona(3), numero(singular)]).
+palabra(eng, go, verbo, [persona(_), numero(plural)]).
+
+% ---- TO EAT ----
+palabra(eng, eat, verbo, [forma(infinitivo)]).
+palabra(eng, eat, verbo, [persona(1), numero(singular)]).
+palabra(eng, eat, verbo, [persona(2), numero(singular)]).
+palabra(eng, eats, verbo, [persona(3), numero(singular)]).
+palabra(eng, eat, verbo, [persona(_), numero(plural)]).
+
+% ---- TO WANT ----
+palabra(eng, want, verbo, [forma(infinitivo)]).
+palabra(eng, want, verbo, [persona(1), numero(singular)]).
+palabra(eng, want, verbo, [persona(2), numero(singular)]).
+palabra(eng, wants, verbo, [persona(3), numero(singular)]).
+palabra(eng, want, verbo, [persona(_), numero(plural)]).
+
+% ---- TO LOVE ----
+palabra(eng, love, verbo, [forma(infinitivo)]).
+palabra(eng, love, verbo, [persona(1), numero(singular)]).
+palabra(eng, love, verbo, [persona(2), numero(singular)]).
+palabra(eng, loves, verbo, [persona(3), numero(singular)]).
+palabra(eng, love, verbo, [persona(_), numero(plural)]).
+
+% ---- TO DRIVE ----
+palabra(eng, drive, verbo, [forma(infinitivo)]).
+palabra(eng, drive, verbo, [persona(1), numero(singular)]).
+palabra(eng, drive, verbo, [persona(2), numero(singular)]).
+palabra(eng, drives, verbo, [persona(3), numero(singular)]).
+palabra(eng, drive, verbo, [persona(_), numero(plural)]).
+
+% ---- TO LISTEN ----
+palabra(eng, listen, verbo, [forma(infinitivo)]).
+palabra(eng, listen, verbo, [persona(1), numero(singular)]).
+palabra(eng, listen, verbo, [persona(2), numero(singular)]).
+palabra(eng, listens, verbo, [persona(3), numero(singular)]).
+palabra(eng, listen, verbo, [persona(_), numero(plural)]).
+
+% ---- TO CAN (PODER) ----
+palabra(eng, can, verbo, [forma(infinitivo)]).
+palabra(eng, can, verbo, [persona(1), numero(singular)]).
+palabra(eng, can, verbo, [persona(2), numero(singular)]).
+palabra(eng, can, verbo, [persona(3), numero(singular)]).
+palabra(eng, can, verbo, [persona(_), numero(plural)]).

@@ -1,7 +1,6 @@
 % base de datos en espanol
 
 
-
 % declarar hechos de pronombres
 palabra(esp, yo, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).
 palabra(esp, tú, pronombre, [persona(2), numero(singular), genero(neutro), caso(sujeto)]).
@@ -14,6 +13,152 @@ palabra(esp, ustedes, pronombre, [persona(3), numero(plural), genero(neutro), ca
 palabra(esp, ellos, pronombre, [persona(3), numero(plural), genero(neutro), caso(sujeto)]).
 palabra(esp, ellas, pronombre, [persona(3), numero(plural), genero(femenino), caso(sujeto)]).
 
+
+% declarar hechos de determinantes
+palabra(esp, el, determinante, [tipo(definido), genero(masculino), numero(singular)]).
+palabra(esp, la, determinante, [tipo(definido), genero(femenino), numero(singular)]).
+palabra(esp, los, determinante, [tipo(definido), genero(masculino), numero(plural)]).
+palabra(esp, las, determinante, [tipo(definido), genero(femenino), numero(plural)]).
+palabra(esp, un, determinante, [tipo(indefinido), genero(masculino), numero(singular)]).
+palabra(esp, una, determinante, [tipo(indefinido), genero(femenino), numero(singular)]).
+palabra(esp, unos, determinante, [tipo(indefinido), genero(masculino), numero(plural)]).
+palabra(esp, unas, determinante, [tipo(indefinido), genero(femenino), numero(plural)]).
+
+% declarar hechos de preposiciones
+palabra(esp, a, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, de, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, en, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, con, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, por, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, para, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, sobre, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, entre, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, sin, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, desde, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, hasta, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, debajo_de, preposicion, [tipo(compuesta), invariable(si)]).
+palabra(esp, delante_de, preposicion, [tipo(compuesta), invariable(si)]).
+
+% declarar hechos de verbos
+% ---- SER ----
+palabra(esp, ser, verbo, [forma(infinitivo)]).
+palabra(esp, soy, verbo, [persona(1), numero(singular)]).
+palabra(esp, eres, verbo, [persona(2), numero(singular)]).
+palabra(esp, es, verbo, [persona(3), numero(singular)]).
+palabra(esp, somos, verbo, [persona(1), numero(plural)]).
+palabra(esp, son, verbo, [persona(3), numero(plural)]).
+
+% ---- TENER ----
+palabra(esp, tener, verbo, [forma(infinitivo)]).
+palabra(esp, tengo, verbo, [persona(1), numero(singular)]).
+palabra(esp, tienes, verbo, [persona(2), numero(singular)]).
+palabra(esp, tiene, verbo, [persona(3), numero(singular)]).
+palabra(esp, tenemos, verbo, [persona(1), numero(plural)]).
+palabra(esp, tienen, verbo, [persona(3), numero(plural)]).
+
+% ---- HABLAR ----
+palabra(esp, hablar, verbo, [forma(infinitivo)]).
+palabra(esp, hablo, verbo, [persona(1), numero(singular)]).
+palabra(esp, hablas, verbo, [persona(2), numero(singular)]).
+palabra(esp, habla, verbo, [persona(3), numero(singular)]).
+palabra(esp, hablamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, hablan, verbo, [persona(3), numero(plural)]).
+
+% ---- DORMIR ----
+palabra(esp, dormir, verbo, [forma(infinitivo)]).
+palabra(esp, duermo, verbo, [persona(1), numero(singular)]).
+palabra(esp, duermes, verbo, [persona(2), numero(singular)]).
+palabra(esp, duerme, verbo, [persona(3), numero(singular)]).
+palabra(esp, dormimos, verbo, [persona(1), numero(plural)]).
+palabra(esp, duermen, verbo, [persona(3), numero(plural)]).
+
+% ---- ESTUDIAR ----
+palabra(esp, estudiar, verbo, [forma(infinitivo)]).
+palabra(esp, estudio, verbo, [persona(1), numero(singular)]).
+palabra(esp, estudias, verbo, [persona(2), numero(singular)]).
+palabra(esp, estudia, verbo, [persona(3), numero(singular)]).
+palabra(esp, estudiamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, estudian, verbo, [persona(3), numero(plural)]).
+
+% ---- COCINAR ----
+palabra(esp, cocinar, verbo, [forma(infinitivo)]).
+palabra(esp, cocino, verbo, [persona(1), numero(singular)]).
+palabra(esp, cocinas, verbo, [persona(2), numero(singular)]).
+palabra(esp, cocina, verbo, [persona(3), numero(singular)]).
+palabra(esp, cocinamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, cocinan, verbo, [persona(3), numero(plural)]).
+
+% ---- TRABAJAR ----
+palabra(esp, trabajar, verbo, [forma(infinitivo)]).
+palabra(esp, trabajo, verbo, [persona(1), numero(singular)]).
+palabra(esp, trabajas, verbo, [persona(2), numero(singular)]).
+palabra(esp, trabaja, verbo, [persona(3), numero(singular)]).
+palabra(esp, trabajamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, trabajan, verbo, [persona(3), numero(plural)]).
+
+% ---- HACER ----
+palabra(esp, hacer, verbo, [forma(infinitivo)]).
+palabra(esp, hago, verbo, [persona(1), numero(singular)]).
+palabra(esp, haces, verbo, [persona(2), numero(singular)]).
+palabra(esp, hace, verbo, [persona(3), numero(singular)]).
+palabra(esp, hacemos, verbo, [persona(1), numero(plural)]).
+palabra(esp, hacen, verbo, [persona(3), numero(plural)]).
+
+% ---- IR ----
+palabra(esp, ir, verbo, [forma(infinitivo)]).
+palabra(esp, voy, verbo, [persona(1), numero(singular)]).
+palabra(esp, vas, verbo, [persona(2), numero(singular)]).
+palabra(esp, va, verbo, [persona(3), numero(singular)]).
+palabra(esp, vamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, van, verbo, [persona(3), numero(plural)]).
+
+% ---- COMER ----
+palabra(esp, comer, verbo, [forma(infinitivo)]).
+palabra(esp, como, verbo, [persona(1), numero(singular)]).
+palabra(esp, comes, verbo, [persona(2), numero(singular)]).
+palabra(esp, come, verbo, [persona(3), numero(singular)]).
+palabra(esp, comemos, verbo, [persona(1), numero(plural)]).
+palabra(esp, comen, verbo, [persona(3), numero(plural)]).
+
+% ---- QUERER ----
+palabra(esp, querer, verbo, [forma(infinitivo)]).
+palabra(esp, quiero, verbo, [persona(1), numero(singular)]).
+palabra(esp, quieres, verbo, [persona(2), numero(singular)]).
+palabra(esp, quiere, verbo, [persona(3), numero(singular)]).
+palabra(esp, queremos, verbo, [persona(1), numero(plural)]).
+palabra(esp, quieren, verbo, [persona(3), numero(plural)]).
+
+% ---- AMAR ----
+palabra(esp, amar, verbo, [forma(infinitivo)]).
+palabra(esp, amo, verbo, [persona(1), numero(singular)]).
+palabra(esp, amas, verbo, [persona(2), numero(singular)]).
+palabra(esp, ama, verbo, [persona(3), numero(singular)]).
+palabra(esp, amamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, aman, verbo, [persona(3), numero(plural)]).
+
+% ---- CONDUCIR ----
+palabra(esp, conducir, verbo, [forma(infinitivo)]).
+palabra(esp, conduzco, verbo, [persona(1), numero(singular)]).
+palabra(esp, conduces, verbo, [persona(2), numero(singular)]).
+palabra(esp, conduce, verbo, [persona(3), numero(singular)]).
+palabra(esp, conducimos, verbo, [persona(1), numero(plural)]).
+palabra(esp, conducen, verbo, [persona(3), numero(plural)]).
+
+% ---- ESCUCHAR ----
+palabra(esp, escuchar, verbo, [forma(infinitivo)]).
+palabra(esp, escucho, verbo, [persona(1), numero(singular)]).
+palabra(esp, escuchas, verbo, [persona(2), numero(singular)]).
+palabra(esp, escucha, verbo, [persona(3), numero(singular)]).
+palabra(esp, escuchamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, escuchan, verbo, [persona(3), numero(plural)]).
+
+% ---- PODER ----
+palabra(esp, poder, verbo, [forma(infinitivo)]).
+palabra(esp, puedo, verbo, [persona(1), numero(singular)]).
+palabra(esp, puedes, verbo, [persona(2), numero(singular)]).
+palabra(esp, puede, verbo, [persona(3), numero(singular)]).
+palabra(esp, podemos, verbo, [persona(1), numero(plural)]).
+palabra(esp, pueden, verbo, [persona(3), numero(plural)]).
 
 
 

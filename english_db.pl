@@ -10,3 +10,240 @@ palabra(eng, she, pronombre, [persona(3), numero(singular), genero(femenino), ca
 palabra(eng, we, pronombre, [persona(1), numero(plural), genero(neutro), caso(sujeto)]).
 palabra(eng, they, pronombre, [persona(3), numero(plural), genero(neutro), caso(sujeto)]).
 palabra(eng, you, pronombre, [persona(2), numero(plural), genero(neutro), caso(sujeto)]).
+
+% declarar hechos de determinantes
+palabra(eng, the, determinante, [tipo(definido), numero(variable), genero(neutro)]).
+palabra(eng, a, determinante, [tipo(indefinido), numero(singular), genero(neutro)]).
+palabra(eng, an, determinante, [tipo(indefinido), numero(singular), genero(neutro)]).
+palabra(eng, some, determinante, [tipo(indefinido), numero(plural), genero(neutro)]).
+
+% declarar hechos de proposiciones
+palabra(eng, to, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, of, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, in, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, with, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, for, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, on, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, between, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, without, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, from, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, until, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, under, preposicion, [tipo(simple), invariable(si)]).
+palabra(eng, in_front_of, preposicion, [tipo(compuesta), invariable(si)]).
+
+%declarar hechos de verbos
+% ---- TO BE ----
+palabra(eng, be, verbo, [forma(infinitivo)]).
+palabra(eng, am, verbo, [persona(1), numero(singular)]).
+palabra(eng, are, verbo, [persona(2), numero(singular)]).
+palabra(eng, is, verbo, [persona(3), numero(singular)]).
+palabra(eng, are, verbo, [persona(1), numero(plural)]).
+palabra(eng, are, verbo, [persona(2), numero(plural)]).
+palabra(eng, are, verbo, [persona(3), numero(plural)]).
+
+% ---- TO HAVE ----
+palabra(eng, have, verbo, [forma(infinitivo)]).
+palabra(eng, have, verbo, [persona(1), numero(singular)]).
+palabra(eng, have, verbo, [persona(2), numero(singular)]).
+palabra(eng, has, verbo, [persona(3), numero(singular)]).
+palabra(eng, have, verbo, [persona(_), numero(plural)]).
+
+% ---- TO SPEAK ----
+palabra(eng, speak, verbo, [forma(infinitivo)]).
+palabra(eng, speak, verbo, [persona(1), numero(singular)]).
+palabra(eng, speak, verbo, [persona(2), numero(singular)]).
+palabra(eng, speaks, verbo, [persona(3), numero(singular)]).
+palabra(eng, speak, verbo, [persona(_), numero(plural)]).
+
+% ---- TO SLEEP ----
+palabra(eng, sleep, verbo, [forma(infinitivo)]).
+palabra(eng, sleep, verbo, [persona(1), numero(singular)]).
+palabra(eng, sleep, verbo, [persona(2), numero(singular)]).
+palabra(eng, sleeps, verbo, [persona(3), numero(singular)]).
+palabra(eng, sleep, verbo, [persona(_), numero(plural)]).
+
+% ---- TO STUDY ----
+palabra(eng, study, verbo, [forma(infinitivo)]).
+palabra(eng, study, verbo, [persona(1), numero(singular)]).
+palabra(eng, study, verbo, [persona(2), numero(singular)]).
+palabra(eng, studies, verbo, [persona(3), numero(singular)]).
+palabra(eng, study, verbo, [persona(_), numero(plural)]).
+
+% ---- TO COOK ----
+palabra(eng, cook, verbo, [forma(infinitivo)]).
+palabra(eng, cook, verbo, [persona(1), numero(singular)]).
+palabra(eng, cook, verbo, [persona(2), numero(singular)]).
+palabra(eng, cooks, verbo, [persona(3), numero(singular)]).
+palabra(eng, cook, verbo, [persona(_), numero(plural)]).
+
+% ---- TO WORK ----
+palabra(eng, work, verbo, [forma(infinitivo)]).
+palabra(eng, work, verbo, [persona(1), numero(singular)]).
+palabra(eng, work, verbo, [persona(2), numero(singular)]).
+palabra(eng, works, verbo, [persona(3), numero(singular)]).
+palabra(eng, work, verbo, [persona(_), numero(plural)]).
+
+% ---- TO DO ----
+palabra(eng, do, verbo, [forma(infinitivo)]).
+palabra(eng, do, verbo, [persona(1), numero(singular)]).
+palabra(eng, do, verbo, [persona(2), numero(singular)]).
+palabra(eng, does, verbo, [persona(3), numero(singular)]).
+palabra(eng, do, verbo, [persona(_), numero(plural)]).
+
+% ---- TO GO ----
+palabra(eng, go, verbo, [forma(infinitivo)]).
+palabra(eng, go, verbo, [persona(1), numero(singular)]).
+palabra(eng, go, verbo, [persona(2), numero(singular)]).
+palabra(eng, goes, verbo, [persona(3), numero(singular)]).
+palabra(eng, go, verbo, [persona(_), numero(plural)]).
+
+% ---- TO EAT ----
+palabra(eng, eat, verbo, [forma(infinitivo)]).
+palabra(eng, eat, verbo, [persona(1), numero(singular)]).
+palabra(eng, eat, verbo, [persona(2), numero(singular)]).
+palabra(eng, eats, verbo, [persona(3), numero(singular)]).
+palabra(eng, eat, verbo, [persona(_), numero(plural)]).
+
+% ---- TO WANT ----
+palabra(eng, want, verbo, [forma(infinitivo)]).
+palabra(eng, want, verbo, [persona(1), numero(singular)]).
+palabra(eng, want, verbo, [persona(2), numero(singular)]).
+palabra(eng, wants, verbo, [persona(3), numero(singular)]).
+palabra(eng, want, verbo, [persona(_), numero(plural)]).
+
+% ---- TO LOVE ----
+palabra(eng, love, verbo, [forma(infinitivo)]).
+palabra(eng, love, verbo, [persona(1), numero(singular)]).
+palabra(eng, love, verbo, [persona(2), numero(singular)]).
+palabra(eng, loves, verbo, [persona(3), numero(singular)]).
+palabra(eng, love, verbo, [persona(_), numero(plural)]).
+
+% ---- TO DRIVE ----
+palabra(eng, drive, verbo, [forma(infinitivo)]).
+palabra(eng, drive, verbo, [persona(1), numero(singular)]).
+palabra(eng, drive, verbo, [persona(2), numero(singular)]).
+palabra(eng, drives, verbo, [persona(3), numero(singular)]).
+palabra(eng, drive, verbo, [persona(_), numero(plural)]).
+
+% ---- TO LISTEN ----
+palabra(eng, listen, verbo, [forma(infinitivo)]).
+palabra(eng, listen, verbo, [persona(1), numero(singular)]).
+palabra(eng, listen, verbo, [persona(2), numero(singular)]).
+palabra(eng, listens, verbo, [persona(3), numero(singular)]).
+palabra(eng, listen, verbo, [persona(_), numero(plural)]).
+
+% ---- TO CAN (PODER) ----
+palabra(eng, can, verbo, [forma(infinitivo)]).
+palabra(eng, can, verbo, [persona(1), numero(singular)]).
+palabra(eng, can, verbo, [persona(2), numero(singular)]).
+palabra(eng, can, verbo, [persona(3), numero(singular)]).
+palabra(eng, can, verbo, [persona(_), numero(plural)]).
+
+% ======================== declaracion de sustantivos===================
+
+% --- FAMILY ---
+palabra(eng, son, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, daughter, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, sons, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, daughters, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, brother, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, sister, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, brothers, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, sisters, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, dad, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, mom, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, dads, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, moms, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, uncle, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, aunt, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, uncles, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, aunts, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, grandfather, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, grandmother, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, grandparents, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, cousin, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, cousins, nombre, [genero(neutro), numero(plural)]).
+
+% --- PEOPLE ---
+palabra(eng, boy, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, girl, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, boys, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, girls, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, baby, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, babies, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, teenager, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, woman, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, women, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, man, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, men, nombre, [genero(neutro), numero(plural)]).
+
+% --- WORKERS ---
+palabra(eng, engineer, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, cook, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, singer, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, doctor, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, artist, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, president, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, lawyer, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, teacher, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, farmer, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, programmer, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, nutritionist, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, accountant, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, secretary, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, veterinarian, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, psychologist, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, student, nombre, [genero(neutro), numero(singular)]).
+
+% --- ANIMALS ---
+palabra(eng, dog, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, cat, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, cow, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, bird, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, horse, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, monkey, nombre, [genero(neutro), numero(singular)]).
+
+% --- PLACES ---
+palabra(eng, farm, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, jungle, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, city, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, hospital, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, school, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, university, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, college, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, house, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, kitchen, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, bathroom, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, park, nombre, [genero(neutro), numero(singular)]).
+
+% --- FOOD ---
+palabra(eng, apple, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, watermelon, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, banana, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, cereal, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, cookies, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, eggs, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, rice, nombre, [genero(neutro), numero(variable)]).
+palabra(eng, meat, nombre, [genero(neutro), numero(variable)]).
+palabra(eng, chicken, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, fish, nombre, [genero(neutro), numero(variable)]).
+palabra(eng, coffee, nombre, [genero(neutro), numero(variable)]).
+palabra(eng, chocolate, nombre, [genero(neutro), numero(variable)]).
+palabra(eng, milk, nombre, [genero(neutro), numero(variable)]).
+
+% --- THINGS ---
+palabra(eng, bed, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, pencil, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, notebook, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, board, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, table, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, bottle, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, water, nombre, [genero(neutro), numero(variable)]).
+palabra(eng, computer, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, pants, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, blouse, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, shoes, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, heels, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, language, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, artificial, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, tree, nombre, [genero(neutro), numero(singular)]).

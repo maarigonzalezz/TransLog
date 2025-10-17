@@ -14,6 +14,269 @@ palabra(esp, ellos, pronombre, [persona(3), numero(plural), genero(neutro), caso
 palabra(esp, ellas, pronombre, [persona(3), numero(plural), genero(femenino), caso(sujeto)]).
 
 
+% declarar hechos de determinantes
+palabra(esp, el, determinante, [tipo(definido), genero(masculino), numero(singular)]).
+palabra(esp, la, determinante, [tipo(definido), genero(femenino), numero(singular)]).
+palabra(esp, los, determinante, [tipo(definido), genero(masculino), numero(plural)]).
+palabra(esp, las, determinante, [tipo(definido), genero(femenino), numero(plural)]).
+palabra(esp, un, determinante, [tipo(indefinido), genero(masculino), numero(singular)]).
+palabra(esp, una, determinante, [tipo(indefinido), genero(femenino), numero(singular)]).
+palabra(esp, unos, determinante, [tipo(indefinido), genero(masculino), numero(plural)]).
+palabra(esp, unas, determinante, [tipo(indefinido), genero(femenino), numero(plural)]).
+
+% declarar hechos de preposiciones
+palabra(esp, a, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, de, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, en, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, con, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, por, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, para, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, sobre, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, entre, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, sin, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, desde, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, hasta, preposicion, [tipo(simple), invariable(si)]).
+palabra(esp, debajo_de, preposicion, [tipo(compuesta), invariable(si)]).
+palabra(esp, delante_de, preposicion, [tipo(compuesta), invariable(si)]).
+
+% declarar hechos de verbos
+% ---- SER ----
+palabra(esp, ser, verbo, [forma(infinitivo)]).
+palabra(esp, soy, verbo, [persona(1), numero(singular)]).
+palabra(esp, eres, verbo, [persona(2), numero(singular)]).
+palabra(esp, es, verbo, [persona(3), numero(singular)]).
+palabra(esp, somos, verbo, [persona(1), numero(plural)]).
+palabra(esp, son, verbo, [persona(3), numero(plural)]).
+
+% ---- TENER ----
+palabra(esp, tener, verbo, [forma(infinitivo)]).
+palabra(esp, tengo, verbo, [persona(1), numero(singular)]).
+palabra(esp, tienes, verbo, [persona(2), numero(singular)]).
+palabra(esp, tiene, verbo, [persona(3), numero(singular)]).
+palabra(esp, tenemos, verbo, [persona(1), numero(plural)]).
+palabra(esp, tienen, verbo, [persona(3), numero(plural)]).
+
+% ---- HABLAR ----
+palabra(esp, hablar, verbo, [forma(infinitivo)]).
+palabra(esp, hablo, verbo, [persona(1), numero(singular)]).
+palabra(esp, hablas, verbo, [persona(2), numero(singular)]).
+palabra(esp, habla, verbo, [persona(3), numero(singular)]).
+palabra(esp, hablamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, hablan, verbo, [persona(3), numero(plural)]).
+
+% ---- DORMIR ----
+palabra(esp, dormir, verbo, [forma(infinitivo)]).
+palabra(esp, duermo, verbo, [persona(1), numero(singular)]).
+palabra(esp, duermes, verbo, [persona(2), numero(singular)]).
+palabra(esp, duerme, verbo, [persona(3), numero(singular)]).
+palabra(esp, dormimos, verbo, [persona(1), numero(plural)]).
+palabra(esp, duermen, verbo, [persona(3), numero(plural)]).
+
+% ---- ESTUDIAR ----
+palabra(esp, estudiar, verbo, [forma(infinitivo)]).
+palabra(esp, estudio, verbo, [persona(1), numero(singular)]).
+palabra(esp, estudias, verbo, [persona(2), numero(singular)]).
+palabra(esp, estudia, verbo, [persona(3), numero(singular)]).
+palabra(esp, estudiamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, estudian, verbo, [persona(3), numero(plural)]).
+
+% ---- COCINAR ----
+palabra(esp, cocinar, verbo, [forma(infinitivo)]).
+palabra(esp, cocino, verbo, [persona(1), numero(singular)]).
+palabra(esp, cocinas, verbo, [persona(2), numero(singular)]).
+palabra(esp, cocina, verbo, [persona(3), numero(singular)]).
+palabra(esp, cocinamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, cocinan, verbo, [persona(3), numero(plural)]).
+
+% ---- TRABAJAR ----
+palabra(esp, trabajar, verbo, [forma(infinitivo)]).
+palabra(esp, trabajo, verbo, [persona(1), numero(singular)]).
+palabra(esp, trabajas, verbo, [persona(2), numero(singular)]).
+palabra(esp, trabaja, verbo, [persona(3), numero(singular)]).
+palabra(esp, trabajamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, trabajan, verbo, [persona(3), numero(plural)]).
+
+% ---- HACER ----
+palabra(esp, hacer, verbo, [forma(infinitivo)]).
+palabra(esp, hago, verbo, [persona(1), numero(singular)]).
+palabra(esp, haces, verbo, [persona(2), numero(singular)]).
+palabra(esp, hace, verbo, [persona(3), numero(singular)]).
+palabra(esp, hacemos, verbo, [persona(1), numero(plural)]).
+palabra(esp, hacen, verbo, [persona(3), numero(plural)]).
+
+% ---- IR ----
+palabra(esp, ir, verbo, [forma(infinitivo)]).
+palabra(esp, voy, verbo, [persona(1), numero(singular)]).
+palabra(esp, vas, verbo, [persona(2), numero(singular)]).
+palabra(esp, va, verbo, [persona(3), numero(singular)]).
+palabra(esp, vamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, van, verbo, [persona(3), numero(plural)]).
+
+% ---- COMER ----
+palabra(esp, comer, verbo, [forma(infinitivo)]).
+palabra(esp, como, verbo, [persona(1), numero(singular)]).
+palabra(esp, comes, verbo, [persona(2), numero(singular)]).
+palabra(esp, come, verbo, [persona(3), numero(singular)]).
+palabra(esp, comemos, verbo, [persona(1), numero(plural)]).
+palabra(esp, comen, verbo, [persona(3), numero(plural)]).
+
+% ---- QUERER ----
+palabra(esp, querer, verbo, [forma(infinitivo)]).
+palabra(esp, quiero, verbo, [persona(1), numero(singular)]).
+palabra(esp, quieres, verbo, [persona(2), numero(singular)]).
+palabra(esp, quiere, verbo, [persona(3), numero(singular)]).
+palabra(esp, queremos, verbo, [persona(1), numero(plural)]).
+palabra(esp, quieren, verbo, [persona(3), numero(plural)]).
+
+% ---- AMAR ----
+palabra(esp, amar, verbo, [forma(infinitivo)]).
+palabra(esp, amo, verbo, [persona(1), numero(singular)]).
+palabra(esp, amas, verbo, [persona(2), numero(singular)]).
+palabra(esp, ama, verbo, [persona(3), numero(singular)]).
+palabra(esp, amamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, aman, verbo, [persona(3), numero(plural)]).
+
+% ---- CONDUCIR ----
+palabra(esp, conducir, verbo, [forma(infinitivo)]).
+palabra(esp, conduzco, verbo, [persona(1), numero(singular)]).
+palabra(esp, conduces, verbo, [persona(2), numero(singular)]).
+palabra(esp, conduce, verbo, [persona(3), numero(singular)]).
+palabra(esp, conducimos, verbo, [persona(1), numero(plural)]).
+palabra(esp, conducen, verbo, [persona(3), numero(plural)]).
+
+% ---- ESCUCHAR ----
+palabra(esp, escuchar, verbo, [forma(infinitivo)]).
+palabra(esp, escucho, verbo, [persona(1), numero(singular)]).
+palabra(esp, escuchas, verbo, [persona(2), numero(singular)]).
+palabra(esp, escucha, verbo, [persona(3), numero(singular)]).
+palabra(esp, escuchamos, verbo, [persona(1), numero(plural)]).
+palabra(esp, escuchan, verbo, [persona(3), numero(plural)]).
+
+% ---- PODER ----
+palabra(esp, poder, verbo, [forma(infinitivo)]).
+palabra(esp, puedo, verbo, [persona(1), numero(singular)]).
+palabra(esp, puedes, verbo, [persona(2), numero(singular)]).
+palabra(esp, puede, verbo, [persona(3), numero(singular)]).
+palabra(esp, podemos, verbo, [persona(1), numero(plural)]).
+palabra(esp, pueden, verbo, [persona(3), numero(plural)]).
+
+
+% ================== declaracion de sustantivos ====================
+% --- FAMILIA ---
+palabra(esp, hijo, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, hija, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, hijos, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, hijas, nombre, [genero(femenino), numero(plural)]).
+palabra(esp, hermano, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, hermana, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, hermanos, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, hermanas, nombre, [genero(femenino), numero(plural)]).
+palabra(esp, papa, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, mama, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, papas, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, mamas, nombre, [genero(femenino), numero(plural)]).
+palabra(esp, tio, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, tia, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, tios, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, tias, nombre, [genero(femenino), numero(plural)]).
+palabra(esp, abuelo, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, abuela, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, abuelos, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, primo, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, prima, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, primos, nombre, [genero(masculino), numero(plural)]).
+
+% --- PERSONAS ---
+palabra(esp, nino, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, nina, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, ninos, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, ninas, nombre, [genero(femenino), numero(plural)]).
+palabra(esp, bebe, nombre, [genero(comun), numero(variable)]).
+palabra(esp, bebes, nombre, [genero(comun), numero(plural)]).
+palabra(esp, adolescente, nombre, [genero(comun), numero(singular)]).
+palabra(esp, mujer, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, mujeres, nombre, [genero(femenino), numero(plural)]).
+palabra(esp, hombre, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, hombres, nombre, [genero(masculino), numero(plural)]).
+
+% --- TRABAJADORES ---
+palabra(esp, ingeniero, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, ingeniera, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, cocinero, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, cocinera, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, cantante, nombre, [genero(comun), numero(singular)]).
+palabra(esp, doctor, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, doctora, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, artista, nombre, [genero(comun), numero(singular)]).
+palabra(esp, presidente, nombre, [genero(comun), numero(singular)]).
+palabra(esp, abogado, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, abogada, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, profesor, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, profesora, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, granjero, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, programador, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, programadora, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, nutricionista, nombre, [genero(comun), numero(singular)]).
+palabra(esp, contador, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, secretaria, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, veterinario, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, veterinaria, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, psicologo, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, psicologa, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, estudiante, nombre, [genero(comun), numero(singular)]).
+
+% --- ANIMALES ---
+palabra(esp, perro, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, gato, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, vaca, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, pajaro, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, caballo, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, mono, nombre, [genero(masculino), numero(singular)]).
+
+% --- LUGARES ---
+palabra(esp, granja, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, selva, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, ciudad, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, hospital, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, escuela, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, universidad, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, colegio, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, casa, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, cocina, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, bano, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, parque, nombre, [genero(masculino), numero(singular)]).
+
+% --- COMIDA ---
+palabra(esp, manzana, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, sandia, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, banana, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, cereal, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, galletas, nombre, [genero(femenino), numero(plural)]).
+palabra(esp, huevos, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, arroz, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, carne, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, pollo, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, pescado, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, cafe, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, chocolate, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, leche, nombre, [genero(femenino), numero(singular)]).
+
+% --- COSAS ---
+palabra(esp, cama, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, lapiz, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, cuaderno, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, pizarra, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, mesa, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, botella, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, agua, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, computadora, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, pantalon, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, blusa, nombre, [genero(femenino), numero(singular)]).
+palabra(esp, zapatos, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, tacones, nombre, [genero(masculino), numero(plural)]).
+palabra(esp, lenguaje, nombre, [genero(masculino), numero(singular)]).
+palabra(esp, artificial, nombre, [genero(comun), numero(singular)]).
+palabra(esp, arbol, nombre, [genero(masculino), numero(singular)]).
 
 
 
