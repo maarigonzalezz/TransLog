@@ -1,7 +1,7 @@
 % base de datos en ingles
 
 
-% declarar hechos de pronombres
+% ======================== declarar pronombres =========================
 palabra(eng, i, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).
 palabra(eng, you, pronombre, [persona(2), numero(singular), genero(neutro), caso(sujeto)]).
 palabra(eng, it, pronombre, [persona(3), numero(singular), genero(neutro), caso(sujeto)]).
@@ -11,13 +11,13 @@ palabra(eng, we, pronombre, [persona(1), numero(plural), genero(neutro), caso(su
 palabra(eng, they, pronombre, [persona(3), numero(plural), genero(neutro), caso(sujeto)]).
 palabra(eng, you, pronombre, [persona(2), numero(plural), genero(neutro), caso(sujeto)]).
 
-% declarar hechos de determinantes
+%  ========================== declarar determinantes ====================
 palabra(eng, the, determinante, [tipo(definido), numero(variable), genero(neutro)]).
 palabra(eng, a, determinante, [tipo(indefinido), numero(singular), genero(neutro)]).
 palabra(eng, an, determinante, [tipo(indefinido), numero(singular), genero(neutro)]).
 palabra(eng, some, determinante, [tipo(indefinido), numero(plural), genero(neutro)]).
 
-% declarar hechos de proposiciones
+% ============================ declarar preposiciones ===================
 palabra(eng, to, preposicion, [tipo(simple), invariable(si)]).
 palabra(eng, of, preposicion, [tipo(simple), invariable(si)]).
 palabra(eng, in, preposicion, [tipo(simple), invariable(si)]).
@@ -31,7 +31,7 @@ palabra(eng, until, preposicion, [tipo(simple), invariable(si)]).
 palabra(eng, under, preposicion, [tipo(simple), invariable(si)]).
 palabra(eng, in_front_of, preposicion, [tipo(compuesta), invariable(si)]).
 
-%declarar hechos de verbos
+% ======================== declarar verbos =============================
 % ---- TO BE ----
 palabra(eng, be, verbo, [forma(infinitivo)]).
 palabra(eng, am, verbo, [persona(1), numero(singular)]).
@@ -370,4 +370,4 @@ palabra(eng, how, pregunta, [tipo(interrogativo), invariable(si)]).
 palabra(eng, why, pregunta, [tipo(interrogativo), invariable(si)]).
 palabra(eng, which, pregunta, [tipo(interrogativo), invariable(si)]).
 
-
+% ========================== declaración de numeros ====================

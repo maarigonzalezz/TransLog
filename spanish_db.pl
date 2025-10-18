@@ -1,7 +1,7 @@
 % base de datos en espanol
 
 
-% declarar hechos de pronombres
+% ======================== declarar pronombres =========================
 palabra(esp, yo, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).
 palabra(esp, tú, pronombre, [persona(2), numero(singular), genero(neutro), caso(sujeto)]).
 palabra(esp, usted, pronombre, [persona(2), numero(singular), genero(neutro), caso(sujeto)]).
@@ -14,7 +14,7 @@ palabra(esp, ellos, pronombre, [persona(3), numero(plural), genero(neutro), caso
 palabra(esp, ellas, pronombre, [persona(3), numero(plural), genero(femenino), caso(sujeto)]).
 
 
-% declarar hechos de determinantes
+% ========================== declarar determinantes ====================
 palabra(esp, el, determinante, [tipo(definido), genero(masculino), numero(singular)]).
 palabra(esp, la, determinante, [tipo(definido), genero(femenino), numero(singular)]).
 palabra(esp, los, determinante, [tipo(definido), genero(masculino), numero(plural)]).
@@ -24,7 +24,7 @@ palabra(esp, una, determinante, [tipo(indefinido), genero(femenino), numero(sing
 palabra(esp, unos, determinante, [tipo(indefinido), genero(masculino), numero(plural)]).
 palabra(esp, unas, determinante, [tipo(indefinido), genero(femenino), numero(plural)]).
 
-% declarar hechos de preposiciones
+%============================ declarar preposiciones ===================
 palabra(esp, a, preposicion, [tipo(simple), invariable(si)]).
 palabra(esp, de, preposicion, [tipo(simple), invariable(si)]).
 palabra(esp, en, preposicion, [tipo(simple), invariable(si)]).
@@ -39,7 +39,7 @@ palabra(esp, hasta, preposicion, [tipo(simple), invariable(si)]).
 palabra(esp, debajo_de, preposicion, [tipo(compuesta), invariable(si)]).
 palabra(esp, delante_de, preposicion, [tipo(compuesta), invariable(si)]).
 
-% declarar hechos de verbos
+% ======================== declarar verbos =============================
 % ---- SER ----
 palabra(esp, ser, verbo, [forma(infinitivo)]).
 palabra(esp, soy, verbo, [persona(1), numero(singular)]).
@@ -416,6 +416,8 @@ palabra(esp, como, pregunta, [tipo(interrogativo), invariable(si)]).
 palabra(esp, por_que, pregunta, [tipo(interrogativo), invariable(si)]).
 palabra(esp, cual, pregunta, [tipo(interrogativo), numero(singular)]).
 palabra(esp, cuales, pregunta, [tipo(interrogativo), numero(plural)]).
+
+% ========================== declaración de numeros ====================
 
 
 

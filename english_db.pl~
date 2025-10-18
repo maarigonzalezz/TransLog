@@ -327,3 +327,47 @@ palabra(eng, useful, adjetivo, [genero(neutro), numero(invariable)]).
 palabra(eng, useless, adjetivo, [genero(neutro), numero(invariable)]).
 palabra(eng, round, adjetivo, [genero(neutro), numero(invariable)]).
 palabra(eng, square, adjetivo, [genero(neutro), numero(invariable)]).
+
+% ===================== declaracion de interjecciones ================
+palabra(eng, hello, interjeccion, [invariable(si)]).
+palabra(eng, goodbye, interjeccion, [invariable(si)]).
+palabra(eng, thanks, interjeccion, [invariable(si)]).
+palabra(eng, please, interjeccion, [invariable(si)]).
+palabra(eng, yes, interjeccion, [invariable(si)]).
+palabra(eng, no, interjeccion, [invariable(si)]).
+palabra(eng, welcome, interjeccion, [invariable(si)]).
+palabra(eng, good_morning, interjeccion, [invariable(si)]).
+palabra(eng, good_afternoon, interjeccion, [invariable(si)]).
+palabra(eng, good_evening, interjeccion, [invariable(si)]).
+palabra(eng, sorry, interjeccion, [invariable(si)]).
+palabra(eng, excuse_me, interjeccion, [invariable(si)]).
+palabra(eng, bless_you, interjeccion, [invariable(si)]).
+palabra(eng, congratulations, interjeccion, [invariable(si)]).
+palabra(eng, bravo, interjeccion, [invariable(si)]).
+palabra(eng, ouch, interjeccion, [invariable(si)]).
+palabra(eng, hey, interjeccion, [invariable(si)]).
+palabra(eng, wow, interjeccion, [invariable(si)]).
+palabra(eng, listen, interjeccion, [invariable(si)]).
+palabra(eng, of_course, interjeccion, [invariable(si)]).
+palabra(eng, okay, interjeccion, [invariable(si)]).
+palabra(eng, sure, interjeccion, [invariable(si)]).
+
+% ================== declaracion de posesivos ==================
+palabra(eng, my, posesivo, [persona(1), numero(singular)]).
+palabra(eng, your, posesivo, [persona(2), numero(variable)]).
+palabra(eng, his, posesivo, [persona(3), numero(singular), genero(masculino)]).
+palabra(eng, her, posesivo, [persona(3), numero(singular), genero(femenino)]).
+palabra(eng, its, posesivo, [persona(3), numero(singular), genero(neutro)]).
+palabra(eng, our, posesivo, [persona(1), numero(plural)]).
+palabra(eng, their, posesivo, [persona(3), numero(plural)]).
+
+% ================== declaracion de interrogativos ===============
+palabra(eng, what, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, who, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, where, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, when, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, how, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, why, pregunta, [tipo(interrogativo), invariable(si)]).
+palabra(eng, which, pregunta, [tipo(interrogativo), invariable(si)]).
+
+% ========================== declaración de numeros ====================
