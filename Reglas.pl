@@ -1,0 +1,148 @@
+% ======================== CONFIGURACIÓN INICIAL =========================
+:- ensure_loaded('english_db.pl').
+:- ensure_loaded('spanish_db.pl').
+:- ensure_loaded('correspondencia.pl').
+
+% ======================== GRAMÁTICA LÓGICA PURA =========================
+
+% oracion(ListaEntrada, EstructuraSintactica)
+oracion(Palabras, estructura(Sujeto, Predicado)) :-
+    sintagma_nominal(Palabras, Sujeto, RestoPalabras),
+    sintagma_verbal(RestoPalabras, Predicado, []).
+
+% sintagma_nominal(ListaEntrada, Estructura, ListaRestante)
+sintagma_nominal([Determinante, Sustantivo|Resto], nominal(Determinante, Sustantivo), Resto) :-
+    es_determinante(Determinante),
+    es_sustantivo(Sustantivo).
+
+sintagma_nominal([Pronombre|Resto], pronombre(Pronombre), Resto) :-
+    es_pronombre(Pronombre).
+
+sintagma_nominal([Sustantivo|Resto], sustantivo(Sustantivo), Resto) :-
+    es_sustantivo(Sustantivo).
+
+sintagma_nominal([Posesivo, Sustantivo|Resto], nominal(Posesivo, Sustantivo), Resto) :-
+    es_posesivo(Posesivo),
+    es_sustantivo(Sustantivo).
+
+% sintagma_verbal(ListaEntrada, Estructura, ListaRestante)
+sintagma_verbal([Verbo|Resto], verbal(Verbo), Resto) :-
+    es_verbo(Verbo).
+
+sintagma_verbal([Verbo|Resto], verbal(Verbo, Objeto), RestoFinal) :-
+    es_verbo(Verbo),
+    sintagma_nominal(Resto, Objeto, RestoFinal).
+
+sintagma_verbal([Verbo, Preposicion|Resto], verbal(Verbo, preposicional(Preposicion, Objeto)), RestoFinal) :-
+    es_verbo(Verbo),
+    es_preposicion(Preposicion),
+    sintagma_nominal(Resto, Objeto, RestoFinal).
+
+% ======================== CATEGORÍAS GRAMATICALES =========================
+
+es_determinante(Palabra) :-
+    palabra(_, Palabra, determinante, _).
+
+es_sustantivo(Palabra) :-
+    palabra(_, Palabra, nombre, _).
+
+es_verbo(Palabra) :-
+    palabra(_, Palabra, verbo, _).
+
+es_pronombre(Palabra) :-
+    palabra(_, Palabra, pronombre, _).
+
+es_adjetivo(Palabra) :-
+    palabra(_, Palabra, adjetivo, _).
+
+es_preposicion(Palabra) :-
+    palabra(_, Palabra, preposicion, _).
+
+es_posesivo(Palabra) :-
+    palabra(_, Palabra, posesivo, _).
+
+es_interjeccion(Palabra) :-
+    palabra(_, Palabra, interjeccion, _).
+
+% ======================== SISTEMA DE TRADUCCIÓN =========================
+
+% traducir_oracion(OracionEntrada, OracionSalida)
+traducir_oracion(OracionEntrada, OracionSalida) :-
+    oracion(OracionEntrada, Estructura),
+    detectar_idioma(OracionEntrada, IdiomaEntrada),
+    idioma_opuesto(IdiomaEntrada, IdiomaSalida),
+    traducir_estructura(Estructura, EstructuraTraducida, IdiomaEntrada, IdiomaSalida),
+    aplanar_estructura(EstructuraTraducida, OracionSalida).
+
+% traducir_estructura(EstructuraOriginal, EstructuraTraducida, IdiomaOrigen, IdiomaDestino)
+traducir_estructura(estructura(Sujeto, Predicado), estructura(SujetoTrad, PredicadoTrad), DeIdioma, AIdioma) :-
+    traducir_componente(Sujeto, SujetoTrad, DeIdioma, AIdioma),
+    traducir_componente(Predicado, PredicadoTrad, DeIdioma, AIdioma).
+
+% Traducción de componentes sintácticos
+traducir_componente(nominal(Det, Sust), nominal(DetTrad, SustTrad), DeIdioma, AIdioma) :-
+    traducir_palabra_logica(Det, DetTrad, DeIdioma, AIdioma),
+    traducir_palabra_logica(Sust, SustTrad, DeIdioma, AIdioma).
+
+traducir_componente(pronombre(Pron), pronombre(PronTrad), DeIdioma, AIdioma) :-
+    traducir_palabra_logica(Pron, PronTrad, DeIdioma, AIdioma).
+
+traducir_componente(sustantivo(Sust), sustantivo(SustTrad), DeIdioma, AIdioma) :-
+    traducir_palabra_logica(Sust, SustTrad, DeIdioma, AIdioma).
+
+traducir_componente(verbal(Verbo), verbal(VerboTrad), DeIdioma, AIdioma) :-
+    traducir_palabra_logica(Verbo, VerboTrad, DeIdioma, AIdioma).
+
+traducir_componente(verbal(Verbo, Obj), verbal(VerboTrad, ObjTrad), DeIdioma, AIdioma) :-
+    traducir_palabra_logica(Verbo, VerboTrad, DeIdioma, AIdioma),
+    traducir_componente(Obj, ObjTrad, DeIdioma, AIdioma).
+
+traducir_componente(verbal(Verbo, preposicional(Prep, Obj)), verbal(VerboTrad, preposicional(PrepTrad, ObjTrad)), DeIdioma, AIdioma) :-
+    traducir_palabra_logica(Verbo, VerboTrad, DeIdioma, AIdioma),
+    traducir_palabra_logica(Prep, PrepTrad, DeIdioma, AIdioma),
+    traducir_componente(Obj, ObjTrad, DeIdioma, AIdioma).
+
+% Traducción lógica de palabras con manejo de ambigüedades
+traducir_palabra_logica(Palabra, Traduccion, DeIdioma, AIdioma) :-
+    % Caso especial: "el" como artículo (no pronombre)
+    (Palabra = el, DeIdioma = esp, AIdioma = eng) ->
+        Traduccion = the
+    ;
+    % Búsqueda normal en correspondencias
+    (corresponde(DeIdioma, Palabra, AIdioma, Traduccion) ->
+        true
+    ;
+        % Si no hay correspondencia, mantener la palabra original
+        Traduccion = Palabra
+    ).
+
+% ======================== UTILIDADES DE ESTRUCTURA =========================
+
+% aplanar_estructura(EstructuraAnidada, ListaPlana)
+aplanar_estructura(estructura(Sujeto, Predicado), OracionCompleta) :-
+    aplanar_componente(Sujeto, ListaSujeto),
+    aplanar_componente(Predicado, ListaPredicado),
+    append(ListaSujeto, ListaPredicado, OracionCompleta).
+
+aplanar_componente(nominal(Det, Sust), [Det, Sust]).
+aplanar_componente(pronombre(Pron), [Pron]).
+aplanar_componente(sustantivo(Sust), [Sust]).
+aplanar_componente(verbal(Verbo), [Verbo]).
+aplanar_componente(verbal(Verbo, Obj), ListaResultante) :-
+    aplanar_componente(Obj, RestoObjeto),
+    append([Verbo], RestoObjeto, ListaResultante).
+aplanar_componente(verbal(Verbo, preposicional(Prep, Obj)), ListaResultante) :-
+    aplanar_componente(Obj, RestoObjeto),
+    append([Verbo, Prep], RestoObjeto, ListaResultante).
+
+% ======================== DETECCIÓN DE IDIOMA =========================
+
+detectar_idioma([], desconocido).
+detectar_idioma([PrimeraPalabra|_], Idioma) :-
+    palabra(Idioma, PrimeraPalabra, _, _),
+    !.
+detectar_idioma([_|RestoPalabras], Idioma) :-
+    detectar_idioma(RestoPalabras, Idioma).
+
+idioma_opuesto(esp, eng).
+idioma_opuesto(eng, esp).
