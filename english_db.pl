@@ -2,7 +2,12 @@
 :- multifile palabra/4.
 :- dynamic palabra/4. % esto se usa ya que se usa el mismo predicado en bd esp ing.
 
-
+% declarar vocales
+vocal(a).
+vocal(e).
+vocal(i).
+vocal(o).
+vocal(u).
 
 % ======================== declarar pronombres =========================
 palabra(eng, i, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).
