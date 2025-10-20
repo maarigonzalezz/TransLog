@@ -1,5 +1,6 @@
 % base de datos en espanol
-
+:- multifile palabra/4.
+:- dynamic palabra/4. % esto se usa ya que se usa el mismo predicado en bd esp ing.
 
 % ======================== declarar pronombres =========================
 palabra(esp, yo, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).

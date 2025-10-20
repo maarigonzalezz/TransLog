@@ -108,15 +108,10 @@ traducir_palabra_logica(Palabra, Traduccion, DeIdioma, AIdioma) :-
     (Palabra = el, DeIdioma = esp, AIdioma = eng) ->
         Traduccion = the
     ;
-    % Busqueda en correspondencias busca traduccion a ingles
-    corresponde(DeIdioma, Palabra, AIdioma, Traduccion) ->
+    % BÃºsqueda normal en correspondencias
+    (corresponde(DeIdioma, Palabra, AIdioma, Traduccion) ->
         true
     ;
-    % Busqueda en correspondencias busca traduccion a español
-    (corresponde(AIdioma, Traduccion, DeIdioma, Palabra) ->
-        true
-    ;
-
         % Si no hay correspondencia, mantener la palabra original
         Traduccion = Palabra
     ).

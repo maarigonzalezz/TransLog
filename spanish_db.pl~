@@ -1,5 +1,7 @@
 % base de datos en espanol
-
+:- set_prolog_flag(encoding, utf8).   % útil por tildes
+:- multifile palabra/4.
+:- dynamic palabra/4. % esto se usa ya que se usa el mismo predicado en bd esp ing.
 
 % ======================== declarar pronombres =========================
 palabra(esp, yo, pronombre, [persona(1), numero(singular), genero(neutro), caso(sujeto)]).
@@ -39,7 +41,7 @@ palabra(esp, hasta, preposicion, [tipo(simple), invariable(si)]).
 palabra(esp, debajo_de, preposicion, [tipo(compuesta), invariable(si)]).
 palabra(esp, delante_de, preposicion, [tipo(compuesta), invariable(si)]).
 
-%======================== declarar verbos ==============================
+% ======================== declarar verbos =============================
 % ---- SER ----
 palabra(esp, ser, verbo, [forma(infinitivo)]).
 palabra(esp, soy, verbo, [persona(1), numero(singular)]).

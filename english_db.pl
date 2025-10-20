@@ -1,4 +1,7 @@
-% base de datos en ingles
+% base de datos en ingles.
+:- multifile palabra/4.
+:- dynamic palabra/4. % esto se usa ya que se usa el mismo predicado en bd esp ing.
+
 
 
 % ======================== declarar pronombres =========================
