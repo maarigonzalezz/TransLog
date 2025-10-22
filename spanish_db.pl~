@@ -1,5 +1,4 @@
 % base de datos en espanol
-:- set_prolog_flag(encoding, utf8).   % útil por tildes
 :- multifile palabra/4.
 :- dynamic palabra/4. % esto se usa ya que se usa el mismo predicado en bd esp ing.
 
@@ -206,11 +205,11 @@ palabra(esp, ingeniero, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, ingeniera, nombre, [genero(femenino), numero(singular)]).
 palabra(esp, cocinero, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, cocinera, nombre, [genero(femenino), numero(singular)]).
-palabra(esp, cantante, nombre, [genero(comun), numero(singular)]).
+palabra(esp, cantante, nombre, [genero(neutro), numero(singular)]).
 palabra(esp, doctor, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, doctora, nombre, [genero(femenino), numero(singular)]).
 palabra(esp, artista, nombre, [genero(comun), numero(singular)]).
-palabra(esp, presidente, nombre, [genero(comun), numero(singular)]).
+palabra(esp, presidente, nombre, [genero(neutro), numero(singular)]).
 palabra(esp, abogado, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, abogada, nombre, [genero(femenino), numero(singular)]).
 palabra(esp, profesor, nombre, [genero(masculino), numero(singular)]).
@@ -218,14 +217,14 @@ palabra(esp, profesora, nombre, [genero(femenino), numero(singular)]).
 palabra(esp, granjero, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, programador, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, programadora, nombre, [genero(femenino), numero(singular)]).
-palabra(esp, nutricionista, nombre, [genero(comun), numero(singular)]).
+palabra(esp, nutricionista, nombre, [genero(neutro), numero(singular)]).
 palabra(esp, contador, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, secretaria, nombre, [genero(femenino), numero(singular)]).
 palabra(esp, veterinario, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, veterinaria, nombre, [genero(femenino), numero(singular)]).
 palabra(esp, psicologo, nombre, [genero(masculino), numero(singular)]).
 palabra(esp, psicologa, nombre, [genero(femenino), numero(singular)]).
-palabra(esp, estudiante, nombre, [genero(comun), numero(singular)]).
+palabra(esp, estudiante, nombre, [genero(neutro), numero(singular)]).
 
 % --- ANIMALES ---
 palabra(esp, perro, nombre, [genero(masculino), numero(singular)]).
@@ -277,98 +276,121 @@ palabra(esp, blusa, nombre, [genero(femenino), numero(singular)]).
 palabra(esp, zapatos, nombre, [genero(masculino), numero(plural)]).
 palabra(esp, tacones, nombre, [genero(masculino), numero(plural)]).
 palabra(esp, lenguaje, nombre, [genero(masculino), numero(singular)]).
-palabra(esp, artificial, nombre, [genero(comun), numero(singular)]).
 palabra(esp, arbol, nombre, [genero(masculino), numero(singular)]).
 
 % ========================= declaracion de adejtivos =================
 % --- DESCRIPTIVOS POSITIVOS ---
-palabra(esp, bonita, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, bonito, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, lindas, adjetivo, [genero(femenino), numero(plural)]).
-palabra(esp, lindos, adjetivo, [genero(masculino), numero(plural)]).
-palabra(esp, lindo, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, linda, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, hermoso, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, hermosa, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, bonita, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, bonito, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, lindas, adjetivo, [genero(femenino), numero(plural), tipo(cualidad)]).
+palabra(esp, lindos, adjetivo, [genero(masculino), numero(plural), tipo(cualidad)]).
+palabra(esp, lindo, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, linda, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, hermoso, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, hermosa, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
 
-% --- TAMAÑO ---
-palabra(esp, pequeno, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, pequena, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, grandes, adjetivo, [genero(invariable), numero(plural)]).
-palabra(esp, grande, adjetivo, [genero(invariable), numero(singular)]).
-palabra(esp, gigante, adjetivo, [genero(invariable), numero(singular)]).
-
-palabra(esp, alto, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, alta, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, bajo, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, baja, adjetivo, [genero(femenino), numero(singular)]).
+% --- TAMAÑO / ALTURA ---
+palabra(esp, pequeno, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, pequena, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, grandes, adjetivo, [genero(invariable), numero(plural), tipo(clasificacion)]).
+palabra(esp, grande, adjetivo, [genero(invariable), numero(singular), tipo(clasificacion)]).
+palabra(esp, gigante, adjetivo, [genero(invariable), numero(singular), tipo(clasificacion)]).
+palabra(esp, alto, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, alta, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, bajo, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, baja, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
 
 % --- COLORES ---
-palabra(esp, rojo, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, roja, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, naranja, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, amarillo, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, amarilla, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, verde, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, azul, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, morado, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, morada, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, rosado, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, rosada, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, turquesa, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, cafe, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, negro, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, negra, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, gris, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, blanco, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, blanca, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, rojo, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, roja, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, naranja, adjetivo, [genero(invariable), numero(invariable), tipo(clasificacion)]).
+palabra(esp, amarillo, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, amarilla, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, verde, adjetivo, [genero(invariable), numero(invariable), tipo(clasificacion)]).
+palabra(esp, azul, adjetivo, [genero(invariable), numero(invariable), tipo(clasificacion)]).
+palabra(esp, morado, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, morada, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, rosado, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, rosada, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, turquesa, adjetivo, [genero(invariable), numero(invariable), tipo(clasificacion)]).
+palabra(esp, cafe, adjetivo, [genero(invariable), numero(invariable), tipo(clasificacion)]).
+palabra(esp, negro, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, negra, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, gris, adjetivo, [genero(invariable), numero(invariable), tipo(clasificacion)]).
+palabra(esp, blanco, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, blanca, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
 
 % --- ESTADO / EMOCIÓN ---
-palabra(esp, rico, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, rica, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, pobre, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, cansado, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, cansada, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, aburrido, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, aburrida, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, feliz, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, tristes, adjetivo, [genero(invariable), numero(plural)]).
-palabra(esp, triste, adjetivo, [genero(invariable), numero(singular)]).
-palabra(esp, enojado, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, enojada, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, estresado, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, estresada, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, rico, adjetivo, [genero(masculino), numero(singular), tipo(contextual)]).
+palabra(esp, rica, adjetivo, [genero(femenino), numero(singular), tipo(contextual)]).
+palabra(esp, pobre, adjetivo, [genero(invariable), numero(invariable), tipo(contextual)]).
+palabra(esp, cansado, adjetivo, [genero(masculino), numero(singular), tipo(estado)]).
+palabra(esp, cansada, adjetivo, [genero(femenino), numero(singular), tipo(estado)]).
+palabra(esp, aburrido, adjetivo, [genero(masculino), numero(singular), tipo(contextual)]).
+palabra(esp, aburrida, adjetivo, [genero(femenino), numero(singular), tipo(contextual)]).
+palabra(esp, feliz, adjetivo, [genero(invariable), numero(invariable), tipo(estado)]).
+palabra(esp, tristes, adjetivo, [genero(invariable), numero(plural), tipo(estado)]).
+palabra(esp, triste, adjetivo, [genero(invariable), numero(singular), tipo(estado)]).
+palabra(esp, enojado, adjetivo, [genero(masculino), numero(singular), tipo(estado)]).
+palabra(esp, enojada, adjetivo, [genero(femenino), numero(singular), tipo(estado)]).
+palabra(esp, estresado, adjetivo, [genero(masculino), numero(singular), tipo(estado)]).
+palabra(esp, estresada, adjetivo, [genero(femenino), numero(singular), tipo(estado)]).
 
 % --- OTROS ---
-palabra(esp, feo, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, fea, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, nuevo, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, nueva, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, viejo, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, vieja, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, natural, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, asombroso, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, asombrosa, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, amable, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, dificil, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, facil, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, interesante, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, importante, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, ocupado, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, ocupada, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, libre, adjetivo, [genero(invariable), numero(invariable)]).
-palabra(esp, rapido, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, rapida, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, lento, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, lenta, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, sucio, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, sucia, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, limpio, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, limpia, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, bueno, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, buena, adjetivo, [genero(femenino), numero(singular)]).
-palabra(esp, malo, adjetivo, [genero(masculino), numero(singular)]).
-palabra(esp, mala, adjetivo, [genero(femenino), numero(singular)]).
+palabra(esp, feo, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, fea, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, nuevo, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, nueva, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, viejo, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, vieja, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, natural, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, asombroso, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, asombrosa, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, amable, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, dificil, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, facil, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, interesante, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, importante, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, ocupado, adjetivo, [genero(masculino), numero(singular), tipo(estado)]).
+palabra(esp, ocupada, adjetivo, [genero(femenino), numero(singular), tipo(estado)]).
+palabra(esp, libre, adjetivo, [genero(invariable), numero(invariable), tipo(contextual)]).
+palabra(esp, rapido, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, rapida, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, lento, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, lenta, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, sucio, adjetivo, [genero(masculino), numero(singular), tipo(resultado)]).
+palabra(esp, sucia, adjetivo, [genero(femenino), numero(singular), tipo(resultado)]).
+palabra(esp, limpio, adjetivo, [genero(masculino), numero(singular), tipo(resultado)]).
+palabra(esp, limpia, adjetivo, [genero(femenino), numero(singular), tipo(resultado)]).
+palabra(esp, bueno, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, buena, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, malo, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, mala, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, delgado, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, delgada, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, gordo, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, gorda, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, caliente, adjetivo, [genero(invariable), numero(invariable), tipo(contextual)]).
+palabra(esp, frio, adjetivo, [genero(masculino), numero(singular), tipo(contextual)]).
+palabra(esp, fria, adjetivo, [genero(femenino), numero(singular), tipo(contextual)]).
+palabra(esp, suave, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, duro, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, dura, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, fuerte, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, debil, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, generoso, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, generosa, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, cruel, adjetivo, [genero(invariable), numero(singular), tipo(cualidad)]).
+palabra(esp, caro, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, cara, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, barato, adjetivo, [genero(masculino), numero(singular), tipo(cualidad)]).
+palabra(esp, barata, adjetivo, [genero(femenino), numero(singular), tipo(cualidad)]).
+palabra(esp, util, adjetivo, [genero(invariable), numero(invariable), tipo(cualidad)]).
+palabra(esp, inutil, adjetivo, [genero(invariable), numero(singular), tipo(cualidad)]).
+palabra(esp, redondo, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, redonda, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
+palabra(esp, cuadrado, adjetivo, [genero(masculino), numero(singular), tipo(clasificacion)]).
+palabra(esp, cuadrada, adjetivo, [genero(femenino), numero(singular), tipo(clasificacion)]).
 
 
 % ===================== declaracion de interjecciones ================
