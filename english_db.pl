@@ -152,109 +152,109 @@ palabra(eng, can, verbo, [persona(_), numero(plural)]).
 % --- FAMILY ---
 palabra(eng, son, nombre, [genero(masculino), numero(singular)]).
 palabra(eng, daughter, nombre, [genero(femenino), numero(singular)]).
-palabra(eng, sons, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, daughters, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, brother, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, sister, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, brothers, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, sisters, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, dad, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, mom, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, dads, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, moms, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, uncle, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, aunt, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, uncles, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, aunts, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, grandfather, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, grandmother, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, grandparents, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, cousin, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, cousins, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, sons, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, daughters, nombre, [genero(femenino), numero(plural)]).
+palabra(eng, brother, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, sister, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, brothers, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, sisters, nombre, [genero(femenino), numero(plural)]).
+palabra(eng, dad, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, mom, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, dads, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, moms, nombre, [genero(femenino), numero(plural)]).
+palabra(eng, uncle, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, aunt, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, uncles, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, aunts, nombre, [genero(femenino), numero(plural)]).
+palabra(eng, grandfather, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, grandmother, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, grandparents, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, cousin, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, cousins, nombre, [genero(masculino), numero(plural)]).
 
 % --- PEOPLE ---
 palabra(eng, boy, nombre, [genero(masculino), numero(singular)]).
 palabra(eng, girl, nombre, [genero(femenino), numero(singular)]).
-palabra(eng, boys, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, girls, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, baby, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, babies, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, teenager, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, woman, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, women, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, man, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, men, nombre, [genero(neutro), numero(plural)]).
+palabra(eng, boys, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, girls, nombre, [genero(femenino), numero(plural)]).
+palabra(eng, baby, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, babies, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, teenager, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, woman, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, women, nombre, [genero(femenino), numero(plural)]).
+palabra(eng, man, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, men, nombre, [genero(masculino), numero(plural)]).
 
 % --- WORKERS ---
-palabra(eng, engineer, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, cook, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, singer, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, doctor, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, artist, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, president, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, lawyer, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, teacher, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, farmer, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, programmer, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, nutritionist, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, accountant, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, secretary, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, veterinarian, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, psychologist, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, student, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, engineer, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, cook, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, singer, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, doctor, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, artist, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, president, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, lawyer, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, teacher, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, farmer, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, programmer, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, nutritionist, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, accountant, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, secretary, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, veterinarian, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, psychologist, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, student, nombre, [genero(masculino), numero(singular)]).
 
 % --- ANIMALS ---
-palabra(eng, dog, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, cat, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, cow, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, bird, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, horse, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, monkey, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, dog, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, cat, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, cow, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, bird, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, horse, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, monkey, nombre, [genero(masculino), numero(singular)]).
 
 % --- PLACES ---
-palabra(eng, farm, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, jungle, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, city, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, hospital, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, school, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, university, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, college, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, house, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, kitchen, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, bathroom, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, park, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, farm, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, jungle, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, city, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, hospital, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, school, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, university, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, college, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, house, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, kitchen, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, bathroom, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, park, nombre, [genero(masculino), numero(singular)]).
 
 % --- FOOD ---
-palabra(eng, apple, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, watermelon, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, banana, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, cereal, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, cookies, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, eggs, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, rice, nombre, [genero(neutro), numero(variable)]).
-palabra(eng, meat, nombre, [genero(neutro), numero(variable)]).
-palabra(eng, chicken, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, fish, nombre, [genero(neutro), numero(variable)]).
-palabra(eng, coffee, nombre, [genero(neutro), numero(variable)]).
-palabra(eng, chocolate, nombre, [genero(neutro), numero(variable)]).
-palabra(eng, milk, nombre, [genero(neutro), numero(variable)]).
+palabra(eng, apple, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, watermelon, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, banana, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, cereal, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, cookies, nombre, [genero(femenino), numero(plural)]).
+palabra(eng, eggs, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, rice, nombre, [genero(masculino), numero(variable)]).
+palabra(eng, meat, nombre, [genero(femenino), numero(variable)]).
+palabra(eng, chicken, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, fish, nombre, [genero(masculino), numero(variable)]).
+palabra(eng, coffee, nombre, [genero(masculino), numero(variable)]).
+palabra(eng, chocolate, nombre, [genero(masculino), numero(variable)]).
+palabra(eng, milk, nombre, [genero(femenino), numero(variable)]).
 
 % --- THINGS ---
-palabra(eng, bed, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, pencil, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, notebook, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, board, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, table, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, bottle, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, water, nombre, [genero(neutro), numero(variable)]).
-palabra(eng, computer, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, pants, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, blouse, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, shoes, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, heels, nombre, [genero(neutro), numero(plural)]).
-palabra(eng, language, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, artificial, nombre, [genero(neutro), numero(singular)]).
-palabra(eng, tree, nombre, [genero(neutro), numero(singular)]).
+palabra(eng, bed, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, pencil, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, notebook, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, board, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, table, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, bottle, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, water, nombre, [genero(femenino), numero(variable)]).
+palabra(eng, computer, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, pants, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, blouse, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, shoes, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, heels, nombre, [genero(masculino), numero(plural)]).
+palabra(eng, language, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, artificial, nombre, [genero(femenino), numero(singular)]).
+palabra(eng, tree, nombre, [genero(masculino), numero(singular)]).
 
 % ===================== declaracion de adjetivos ===============
 % --- DESCRIPTIVE / POSITIVE ---
@@ -375,7 +375,7 @@ palabra(eng, how, pregunta, [tipo(interrogativo), invariable(si)]).
 palabra(eng, why, pregunta, [tipo(interrogativo), invariable(si)]).
 palabra(eng, which, pregunta, [tipo(interrogativo), invariable(si)]).
 
-% ========================== declaración de numeros ====================
+% ========================== declaraciï¿½n de numeros ====================
 
 % --- MANNER ---
 palabra(eng, well, adverbio, [tipo(modo), invariable(si)]).
