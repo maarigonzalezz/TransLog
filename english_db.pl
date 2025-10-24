@@ -147,6 +147,62 @@ palabra(eng, can, verbo, [persona(2), numero(singular)]).
 palabra(eng, can, verbo, [persona(3), numero(singular)]).
 palabra(eng, can, verbo, [persona(_), numero(plural)]).
 
+% ---- TO RUN ----
+palabra(eng, run, verbo, [forma(infinitivo), intransitivo(si)]).
+palabra(eng, run, verbo, [persona(1), numero(singular), intransitivo(si)]).
+palabra(eng, run, verbo, [persona(2), numero(singular), intransitivo(si)]).
+palabra(eng, runs, verbo, [persona(3), numero(singular), intransitivo(si)]).
+palabra(eng, run, verbo, [persona(_), numero(plural), intransitivo(si)]).
+
+% ---- TO PLAY ----
+palabra(eng, play, verbo, [forma(infinitivo), intransitivo(si)]).
+palabra(eng, play, verbo, [persona(1), numero(singular), intransitivo(si)]).
+palabra(eng, play, verbo, [persona(2), numero(singular), intransitivo(si)]).
+palabra(eng, plays, verbo, [persona(3), numero(singular), intransitivo(si)]).
+palabra(eng, play, verbo, [persona(_), numero(plural), intransitivo(si)]).
+
+% ---- TO LEARN ----
+palabra(eng, learn, verbo, [forma(infinitivo), transitivo(si)]).
+palabra(eng, learn, verbo, [persona(1), numero(singular), transitivo(si)]).
+palabra(eng, learn, verbo, [persona(2), numero(singular), transitivo(si)]).
+palabra(eng, learns, verbo, [persona(3), numero(singular), transitivo(si)]).
+palabra(eng, learn, verbo, [persona(_), numero(plural), transitivo(si)]).
+
+% ---- TO READ ----
+palabra(eng, read, verbo, [forma(infinitivo), transitivo(si)]).
+palabra(eng, read, verbo, [persona(1), numero(singular), transitivo(si)]).
+palabra(eng, read, verbo, [persona(2), numero(singular), transitivo(si)]).
+palabra(eng, reads, verbo, [persona(3), numero(singular), transitivo(si)]).
+palabra(eng, read, verbo, [persona(_), numero(plural), transitivo(si)]).
+
+% ---- TO WRITE ----
+palabra(eng, write, verbo, [forma(infinitivo), transitivo(si)]).
+palabra(eng, write, verbo, [persona(1), numero(singular), transitivo(si)]).
+palabra(eng, write, verbo, [persona(2), numero(singular), transitivo(si)]).
+palabra(eng, writes, verbo, [persona(3), numero(singular), transitivo(si)]).
+palabra(eng, write, verbo, [persona(_), numero(plural), transitivo(si)]).
+
+% ---- TO LIVE ----
+palabra(eng, live, verbo, [forma(infinitivo), intransitivo(si)]).
+palabra(eng, live, verbo, [persona(1), numero(singular), intransitivo(si)]).
+palabra(eng, live, verbo, [persona(2), numero(singular), intransitivo(si)]).
+palabra(eng, lives, verbo, [persona(3), numero(singular), intransitivo(si)]).
+palabra(eng, live, verbo, [persona(_), numero(plural), intransitivo(si)]).
+
+% ---- TO BUY ----
+palabra(eng, buy, verbo, [forma(infinitivo), transitivo(si)]).
+palabra(eng, buy, verbo, [persona(1), numero(singular), transitivo(si)]).
+palabra(eng, buy, verbo, [persona(2), numero(singular), transitivo(si)]).
+palabra(eng, buys, verbo, [persona(3), numero(singular), transitivo(si)]).
+palabra(eng, buy, verbo, [persona(_), numero(plural), transitivo(si)]).
+
+% ---- TO TALK ----
+palabra(eng, talk, verbo, [forma(infinitivo), intransitivo(si)]).
+palabra(eng, talk, verbo, [persona(1), numero(singular), intransitivo(si)]).
+palabra(eng, talk, verbo, [persona(2), numero(singular), intransitivo(si)]).
+palabra(eng, talks, verbo, [persona(3), numero(singular), intransitivo(si)]).
+palabra(eng, talk, verbo, [persona(_), numero(plural), intransitivo(si)]).
+
 % ======================== declaracion de sustantivos===================
 
 % --- FAMILY ---
@@ -162,6 +218,7 @@ palabra(eng, dad, nombre, [genero(masculino), numero(singular)]).
 palabra(eng, mom, nombre, [genero(femenino), numero(singular)]).
 palabra(eng, dads, nombre, [genero(masculino), numero(plural)]).
 palabra(eng, moms, nombre, [genero(femenino), numero(plural)]).
+palabra(eng, parents, nombre, [genero(masculino), numero(plural)]).
 palabra(eng, uncle, nombre, [genero(masculino), numero(singular)]).
 palabra(eng, aunt, nombre, [genero(femenino), numero(singular)]).
 palabra(eng, uncles, nombre, [genero(masculino), numero(plural)]).
@@ -255,6 +312,7 @@ palabra(eng, heels, nombre, [genero(masculino), numero(plural)]).
 palabra(eng, language, nombre, [genero(femenino), numero(singular)]).
 palabra(eng, artificial, nombre, [genero(femenino), numero(singular)]).
 palabra(eng, tree, nombre, [genero(masculino), numero(singular)]).
+palabra(eng, car, nombre, [genero(masculino), numero(singular)]).
 
 % ===================== declaracion de adjetivos ===============
 % --- DESCRIPTIVE / POSITIVE ---

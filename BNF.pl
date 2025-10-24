@@ -66,7 +66,7 @@ a_minuscula_ascii(C, L) :-
     ; L = C ).
 
 es_puntuacion(C) :-
-    member(C, ['.', ',', ';', ':', '!', '?', '¿', '¡', '(', ')', '"', 0'']).
+    miembro(C, ['.', ',', ';', ':', '!', '?', '¿', '¡', '(', ')', '"', 0'']).
 
 % Parte una lista de chars (con espacios) en lista de átomos
 dividir_en_palabras(Chars, Palabras) :-
